@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto 500px auto;
+}
+.card-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    border-radius: 30px;
+    border:1px solid #fff;
+  }
+.illustration > img{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px 30px 0 0;
+}
+.content{
+    background-color: #fff;
+    margin-top: -4px;
+    padding: 0 10%;
+    border-radius: 0 0 30px 30px;
+    font-family: 'Inter', sans-serif;
+}
+h2{
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 32px;
+}
+p{
+    display: grid;
+    justify-content: center;
+    margin-top: 22px;
+    font-size: 17px;
+    color: gray;
+    text-align: center;
+    
+}
+.three-items{
+    display: inline-grid;
+    grid-template-columns: 60px auto auto;
+    width: 100%;
+    background-color: hsl(225, 51%, 80%);
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+.item{
+    padding: 10px 10px;
+}
+h5{
+    margin-top:8px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #000;
+}
+.item span{
+    color: gray;
+    font-size: 13px;
+}
+.item button{
+    border: none;
+    border-bottom: 2px solid navy;
+    background-color: transparent;
+    color: navy;
+}
+.item:nth-child(3) {
+    place-items: center;
+    display:grid
+  }
+  .ptp{
+      background-color: hsl(245, 75%, 52%);
+      color: #fff;
+      width: 100%;
+      border-radius: 3px;
+      border: none;
+      padding: 15px 20px;
+      margin-bottom: 24px;
+  }
+  .cancel{
+      text-align: center;
+      margin-bottom: 24px;
+  }
+  @media only screen and (max-width: 600px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto 320px auto;
+    }
+  }
