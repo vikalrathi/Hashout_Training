@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    background-color:hsl(218, 22%, 67%);
+    margin:0%;
+    padding: 0%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    border: 6px;
+    padding: 200px;
+}
+.community{
+    display: grid;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.item1{
+    padding: 30px 25px;
+}
+h2{
+    font-size: 24px;
+    font-family: 'Karla', sans-serif;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.para{
+font-size: 20px;
+font-family: 'Karla', sans-serif;
+color:hsl(71, 73%, 54%);
+margin-bottom: 14px;
+}
+.desc{
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    color: hsl(218, 22%, 67%);
+    margin-bottom: 0px;
+}
+.item2{
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+.col-1{
+    background-color: #008B8B;
+    border-radius: 0 0 0 6px;
+    padding: 30px 25px;
+}
+
+.col-2{
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px 130px 30px 25px;
+    border-radius: 0 0 6px 0;
+}
+.col-2 p{
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+}
+h3{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 0px;
+}
+span{
+    font-size: 40px;
+    padding-right: 15px;
+    color: #fff;
+}
+.month{
+    color: hsl(179, 62%, 43%);
+    font-size: 16px;
+    position: relative;
+    top: -10px;
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+    color: yellow;
+    position: relative;
+    top: 20px;
+}
+.col-1-p{
+    color: #fff;
+    font-size: 12px;
+}
+@media screen and (max-width: 600px) {
+    .item2{
+        display: inline;
+    }
+    .grid-container{
+        grid-template-columns: auto 300px auto;
+        padding: 10px;
+    }
+    .col-1{
+        border-radius: 0;
+    }
+}
