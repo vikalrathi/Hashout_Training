@@ -9,7 +9,10 @@ body {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: auto 500px auto;
+    justify-content: center;
+}
+.item2{
+    width: 500px;
 }
 .card-container {
     display: grid;
@@ -91,8 +94,7 @@ h5{
       margin-bottom: 24px;
   }
   @media only screen and (max-width: 600px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto 320px auto;
+    .item2{
+        width: 300px;
     }
   }

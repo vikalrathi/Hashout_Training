@@ -14,31 +14,48 @@ body{
     .container{
         padding: 1% 5%;
     }
-}
-.container .box{
-   
-    border:1px solid black;
-    border-radius: 12px;
-    display: flex;
-    overflow: hidden;
-    
-}
-@media only screen and (max-width: 600px) {
     .container .box{
         display: flex;
         flex-direction: column-reverse;
     }
+    .container .box1{
+        padding: 30px;
+        background: hsl(244, 38%, 16%);
+    }
+    .container .box1 .heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .container .box1 .description{
+        text-align: center;
+    }
+    h3{
+        margin-bottom: 5px;
+    }
+    img{
+        height: auto;
+        width: 361px;
+    }
+    .container .box1 .details{
+        display: block;
+        text-align: center;
+    }
+    .container .box1 .details .detail{
+        padding-right: 0px;
+    }
+
+}
+.container .box{
+    border:1px solid black;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
 }
 .container .box1{
     padding: 80px 50px;
     background: hsl(244, 38%, 16%);
 }
-@media only screen and (max-width: 600px) {
-    .container .box1{
-        padding: 30px;
-        background: hsl(244, 38%, 16%);
-    }
-}
+
 .container .box1 .heading{
     font-size: 40px;
     color: #fff;
@@ -46,32 +63,16 @@ body{
     justify-content: center;
     margin: 0;
 }
-@media only screen and (max-width: 600px) {
-    .container .box1 .heading{
-    font-size: 30px;
-    text-align: center;
-    }
-}
 .container .box1 .description{
     font-size: 15px;
     color: grey;
     margin-bottom: 27px;
 }
-@media only screen and (max-width: 600px) {
-    .container .box1 .description{
-        text-align: center;
-    }
-}
 .container .box1 .details{
     display: flex;
     justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
-    .container .box1 .details{
-        display: block;
-        text-align: center;
-    }
-}
+
 .container .box1 .details .detail{
     padding-right: 65px;
     
@@ -81,17 +82,6 @@ body{
     color: #fff;
     font-weight: bold;
 }
-@media only screen and (max-width: 600px) {
-    h3{
-        margin-bottom: 5px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    
-    .container .box1 .details .detail{
-        padding-right: 0px;
-    }
-}
 .container .box1 .details .detail p{
     font-size: 14px;
     color: grey;
@@ -99,12 +89,6 @@ body{
 img{
     height: 442px;
     width: 488px;
-}
-@media only screen and (max-width: 500px) {
-    img{
-        height: auto;
-        width: 361px;
-    }
 }
 span{
     color: hsl(277, 64%, 61%);
@@ -120,4 +104,4 @@ span{
     bottom: 0;
     background-color:rgb(170,92,219,0.5);
     z-index: 2;
-  }
+}
