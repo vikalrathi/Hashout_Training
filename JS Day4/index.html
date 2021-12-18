@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center mb-3">Converter</h1>
+        <form>
+            <h4 class="display-5 text-left mb-3">Weight</h4>
+            <div class="form-group">
+                <input type="number" class="form-control form-control-lg" id="kgsInput" placeholder="Enter Kilograms..." />
+            </div>
+        </form>
+        <div class="card card-primary mb-2">
+            <div class="card-block">
+                <h4>Pounds:</h4>
+                <div id="lbsOutput"></div>
+            </div>
+        </div>
+        <form>
+            <h4 class="display-5 text-left mb-3">Measurement</h4>
+            <div class="form-group">
+                <input type="number" class="form-control form-control-lg" id="feetInput" placeholder="Enter Feet..." />
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block">
+                <h4>Centimeters:</h4>
+                <div id="cmsOutput"></div>
+            </div>
+        </div>
+        <form>
+            <h4 class="display-5 text-left mb-3">Km/hr to m/s</h4>
+            <div class="form-group">
+                <input type="number" class="form-control form-control-lg" id="speedInput" placeholder="Enter speed..." />
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block">
+                <h4>m/s:</h4>
+                <div id="msOutput"></div>
+            </div>
+        </div>
+        <form>
+            <h4 class="display-5 text-left mb-3">Temp -> F to deg C</h4>
+            <div class="form-group">
+                <input type="number" class="form-control form-control-lg" id="tempInput" placeholder="Enter temp in F..." />
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block">
+                <h4>Temp in deg C:</h4>
+                <div id="COutput"></div>
+            </div>
+        </div>
+        <form>
+            <h4 class="display-5 text-left mb-3">Hours to mins conversion</h4>
+            <div class="form-group">
+                <input type="number" class="form-control form-control-lg" id="hourInput" placeholder="Enter hours..." />
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block">
+                <h4>Minutes</h4>
+                <div id="minOutput"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
